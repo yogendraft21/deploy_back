@@ -34,8 +34,8 @@ async def create_checkout_session(request: Request):
                 },
             ],
             mode="payment",
-            success_url="http://localhost:5173/pay/success", 
-            cancel_url="http://localhost:5173/dashboard",
+            success_url="https://deploy-front-nu.vercel.app/pay/success", 
+            cancel_url="https://deploy-front-nu.vercel.app/dashboard",
             metadata={
                 "patient_id": req_data['patientId'],
             }
